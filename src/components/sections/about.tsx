@@ -33,17 +33,18 @@ export const About = () => {
           >
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 bg-[#1c1528]">
               <Image
-                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=800&q=80"
-                alt="Portrait"
+                src="/akansh.png"
+                alt="Akansh Srivastava"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 380px"
+                priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0c0414] via-transparent to-transparent" />
             </div>
             <div className="absolute -bottom-4 -right-4 bg-[#1c1528] border border-white/10 rounded-2xl px-4 py-3 shadow-xl backdrop-blur">
               <div className="text-xs text-white/50">Currently at</div>
-              <div className="text-sm font-semibold">Microsoft · Redmond</div>
+              <div className="text-sm font-semibold">Microsoft · SDE-2</div>
             </div>
           </motion.div>
 
@@ -55,28 +56,30 @@ export const About = () => {
             className="space-y-5 text-white/75 leading-relaxed"
           >
             <p>
-              I&apos;m a <strong className="text-white">Backend Developer</strong>{" "}
-              who loves turning complex problems into elegant, efficient solutions.
-              My core strength is building scalable server-side systems — but I&apos;m
-              equally comfortable jumping into frontend work to deliver complete,
-              polished products.
+              I&apos;m an <strong className="text-white">SDE-2 at Microsoft</strong>{" "}
+              working on the Dynamics 365 Customer Service telephony stack.
+              I build distributed systems in Java Spring Boot, .NET, Node.js,
+              and Python — and I&apos;m equally comfortable in React when the
+              product needs a complete, polished front door.
             </p>
             <p>
-              Across startups and enterprises, I&apos;ve shipped features used by
-              thousands, improved system performance, mentored junior developers,
-              and driven technical decisions that shape product direction.
+              Across Microsoft, Nuance, and Infosys I&apos;ve scaled synthetic
+              call runs from 2K to 40K concurrent agents, shipped Cadence at
+              10M+ calls/week with zero failures, and cut ACS cost ~70% with
+              a custom stub. I&apos;m strong on Azure, Keycloak/OAuth2, and
+              security remediation (Veracode SAST/DAST, Pentest, SonarQube).
             </p>
             <p>
               I believe great software is built at the intersection of{" "}
               <span className="text-purple-300">clean code</span>,{" "}
-              <span className="text-blue-300">user empathy</span>, and{" "}
+              <span className="text-blue-300">reliability at scale</span>, and{" "}
               <span className="text-white">relentless curiosity</span>.
             </p>
 
             <div className="grid sm:grid-cols-3 gap-3 pt-4">
               {[
-                { icon: MapPin, label: "Location", value: "Redmond, WA" },
-                { icon: GraduationCap, label: "Education", value: "B.Tech, CS" },
+                { icon: MapPin, label: "Location", value: "Prayagraj, India" },
+                { icon: GraduationCap, label: "Education", value: "B.E. IT, SRM" },
                 { icon: LangIcon, label: "Languages", value: "English, Hindi" },
               ].map(({ icon: Icon, label, value }) => (
                 <div

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, FileText, Send } from "lucide-react";
+import { Mail, FileText, Send, Phone } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons/brand";
 import * as React from "react";
 
@@ -9,12 +9,33 @@ const CHANNELS = [
   {
     icon: Mail,
     label: "Email",
-    value: "srivastavaak@microsoft.com",
-    href: "mailto:srivastavaak@microsoft.com",
+    value: "akanshsrivastava.srivastava35@gmail.com",
+    href: "mailto:akanshsrivastava.srivastava35@gmail.com",
   },
-  { icon: LinkedinIcon, label: "LinkedIn", value: "linkedin.com/in/akansh", href: "#" },
-  { icon: GithubIcon, label: "GitHub", value: "github.com/akansh", href: "#" },
-  { icon: FileText, label: "Blog", value: "writing.akansh.dev", href: "#" },
+  {
+    icon: Phone,
+    label: "Phone",
+    value: "+91 82181 52572",
+    href: "tel:+918218152572",
+  },
+  {
+    icon: LinkedinIcon,
+    label: "LinkedIn",
+    value: "linkedin.com/in/akansh-srivastava",
+    href: "#",
+  },
+  {
+    icon: GithubIcon,
+    label: "GitHub",
+    value: "github.com/IAMAKANSH",
+    href: "https://github.com/IAMAKANSH",
+  },
+  {
+    icon: FileText,
+    label: "Medium",
+    value: "medium.com/@akansh",
+    href: "#",
+  },
 ];
 
 export const Contact = () => {
@@ -37,7 +58,8 @@ export const Contact = () => {
             Let&apos;s build something together
           </h2>
           <p className="text-white/60 mt-3">
-            Always open to interesting backend problems and senior engineering roles
+            Always open to distributed-systems problems, telephony / real-time
+            tooling, and senior engineering roles
           </p>
         </motion.div>
 

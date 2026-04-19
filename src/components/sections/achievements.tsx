@@ -5,40 +5,40 @@ import { Trophy, TrendingUp, Users, BookOpen, Star, ShieldCheck } from "lucide-r
 
 const ACHIEVEMENTS = [
   {
-    icon: Trophy,
-    title: "Hackathon Winner",
-    desc: "1st place at Company Hackathon 2023 for building an AI-powered code review tool in 48 hours.",
-    color: "from-yellow-300 to-amber-500",
-  },
-  {
     icon: TrendingUp,
-    title: "Performance Impact",
-    desc: "Reduced API response time by 65% through query optimization and caching strategies.",
+    title: "2K → 40K Concurrent Calls",
+    desc: "Scaled Dynamics 365 synthetic call runs 20x — from 2K to 40K concurrent calls with 20K agents — onboarding enterprise customers to Omnichannel.",
     color: "from-green-300 to-emerald-500",
   },
   {
-    icon: Users,
-    title: "Team Leadership",
-    desc: "Led a cross-functional team of 8 to deliver a major product launch on schedule.",
-    color: "from-purple-300 to-violet-500",
-  },
-  {
-    icon: BookOpen,
-    title: "Knowledge Sharing",
-    desc: "Published 10+ technical articles and conducted internal workshops on system design.",
-    color: "from-blue-300 to-cyan-500",
+    icon: Trophy,
+    title: "10M+ Calls, Zero Failures",
+    desc: "Shipped Microsoft Cadence Calling App at 10M+ calls across 7 days with zero failures — multi-call, ACS SDK, Redis/AMR.",
+    color: "from-yellow-300 to-amber-500",
   },
   {
     icon: Star,
-    title: "Open Source",
-    desc: "Contributed to popular open-source projects with 500+ GitHub stars on personal repos.",
+    title: "~70% ACS Cost Reduction",
+    desc: "Built a Python + Redis ACS signaling stub that cut ACS cost by ~70% and unblocked the 40K-CC milestone.",
     color: "from-pink-300 to-rose-500",
   },
   {
+    icon: Users,
+    title: "Promoted to SDE-2",
+    desc: "Promoted from SDE to SDE-2 at Microsoft (Mar 2025) for impact across D365 CSW telephony and E2E tooling.",
+    color: "from-purple-300 to-violet-500",
+  },
+  {
     icon: ShieldCheck,
-    title: "Certifications",
-    desc: "Azure Solutions Architect, Kubernetes Administrator, and other industry certifications.",
+    title: "Security Remediation DRI",
+    desc: "DRI on live ICM incidents and S360 security-vulnerability remediation for ACS and Dynamics 365; resolved critical Pentest / Veracode SAST & DAST findings at Nuance.",
     color: "from-teal-300 to-sky-500",
+  },
+  {
+    icon: BookOpen,
+    title: "Publication & Certs",
+    desc: "IJABAS #00238 — Password Security via Mutation. AZ-900 Azure Fundamentals and AWS SysOps. Infosys Star Performer (Jan 2021).",
+    color: "from-blue-300 to-cyan-500",
   },
 ];
 

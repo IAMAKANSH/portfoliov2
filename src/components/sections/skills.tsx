@@ -3,50 +3,72 @@
 import * as React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-type TabKey = "languages" | "frontend" | "backend" | "devops";
+type TabKey = "languages" | "backend" | "telephony" | "azure" | "security" | "devops";
 
 const SKILLS: Record<TabKey, { name: string; level: number }[]> = {
   languages: [
-    { name: "TypeScript", level: 92 },
-    { name: "Python", level: 90 },
-    { name: "Go", level: 78 },
-    { name: "Java", level: 85 },
-    { name: "C#", level: 80 },
-    { name: "Rust", level: 65 },
+    { name: "Java 8/11", level: 92 },
+    { name: "C# / .NET", level: 88 },
+    { name: "Python", level: 85 },
+    { name: "TypeScript", level: 85 },
+    { name: "JavaScript", level: 90 },
     { name: "SQL", level: 88 },
-  ],
-  frontend: [
-    { name: "React", level: 88 },
-    { name: "Next.js", level: 85 },
-    { name: "Tailwind CSS", level: 92 },
-    { name: "Framer Motion", level: 78 },
-    { name: "TypeScript", level: 92 },
-    { name: "Expo / RN", level: 72 },
+    { name: "Bash", level: 78 },
   ],
   backend: [
-    { name: "Node.js", level: 90 },
-    { name: ".NET / ASP.NET", level: 88 },
-    { name: "Spring Boot", level: 82 },
-    { name: "FastAPI", level: 85 },
-    { name: "PostgreSQL", level: 88 },
-    { name: "Redis", level: 80 },
-    { name: "Kafka", level: 75 },
+    { name: "Spring Boot", level: 92 },
+    { name: "JAX-RS", level: 85 },
+    { name: "Node.js (Express)", level: 88 },
+    { name: ".NET", level: 85 },
+    { name: "JPA / Hibernate", level: 82 },
+    { name: "REST APIs", level: 92 },
+    { name: "React / Redux", level: 82 },
+  ],
+  telephony: [
+    { name: "ACS Calling SDK", level: 92 },
+    { name: "SignalR", level: 88 },
+    { name: "WebSocket", level: 88 },
+    { name: "SIP", level: 80 },
+    { name: "DTMF", level: 85 },
+    { name: "STT / Transcription", level: 82 },
+  ],
+  azure: [
+    { name: "App Service", level: 88 },
+    { name: "Functions", level: 85 },
+    { name: "Logic Apps", level: 82 },
+    { name: "Blob / Key Vault", level: 85 },
+    { name: "Managed Identity", level: 88 },
+    { name: "Cosmos DB", level: 78 },
+    { name: "Dataverse / NRD / AMR", level: 80 },
+    { name: "Form Recognizer", level: 75 },
+  ],
+  security: [
+    { name: "Keycloak", level: 88 },
+    { name: "OAuth2 / OIDC", level: 88 },
+    { name: "HashiCorp Vault", level: 80 },
+    { name: "Veracode SAST/DAST", level: 85 },
+    { name: "Pentest remediation", level: 85 },
+    { name: "SonarQube", level: 82 },
   ],
   devops: [
-    { name: "Azure", level: 90 },
-    { name: "AWS", level: 80 },
     { name: "Docker", level: 88 },
     { name: "Kubernetes", level: 78 },
-    { name: "GitHub Actions", level: 85 },
-    { name: "Terraform", level: 70 },
+    { name: "Jenkins / CI-CD", level: 85 },
+    { name: "Git", level: 92 },
+    { name: "JUnit 5", level: 88 },
+    { name: "Playwright", level: 82 },
+    { name: "Selenium", level: 80 },
+    { name: "Postman", level: 88 },
   ],
 };
 
 const TABS: { key: TabKey; label: string }[] = [
   { key: "languages", label: "Languages" },
-  { key: "frontend", label: "Frontend" },
-  { key: "backend", label: "Backend" },
-  { key: "devops", label: "DevOps & Tools" },
+  { key: "backend", label: "Backend & Web" },
+  { key: "telephony", label: "Telephony / Real-Time" },
+  { key: "azure", label: "Azure" },
+  { key: "security", label: "Identity & Security" },
+  { key: "devops", label: "DevOps & Testing" },
 ];
 
 export const Skills = () => {

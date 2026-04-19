@@ -6,8 +6,8 @@ import { ArrowRight, Download, Mail, Sparkles } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons/brand";
 
 const ROLES = [
-  "Backend Systems",
-  "Scalable APIs",
+  "Distributed Systems",
+  "Telephony at Scale",
   "Cloud Services",
   "End-to-End Products",
 ];
@@ -93,8 +93,8 @@ const Hero1 = () => {
                 <span className="bg-black p-1 rounded-full">
                   <Sparkles className="w-3 h-3 text-purple-300" />
                 </span>
-                Available for senior backend roles —
-                <span className="text-purple-300 font-medium">Microsoft</span>
+                SDE-2 at
+                <span className="text-purple-300 font-medium">Microsoft · Dynamics 365</span>
               </span>
             </div>
           </motion.div>
@@ -128,9 +128,10 @@ const Hero1 = () => {
             transition={{ duration: 0.7, delay: 0.35 }}
             className="text-base md:text-lg text-white/70 max-w-2xl mx-auto"
           >
-            Backend Developer with a strong grasp of the frontend. I build robust,
-            scalable server-side systems and deliver end-to-end solutions when the
-            team needs it.
+            SDE-2 with 6+ years building distributed systems in Java, .NET,
+            Node.js, and Python. At Microsoft, I scaled Dynamics 365 telephony
+            tooling from 2K to 40K concurrent calls and shipped Cadence at
+            10M+ calls/week with zero failures.
           </motion.p>
 
           <motion.div
@@ -162,13 +163,13 @@ const Hero1 = () => {
             transition={{ duration: 0.7, delay: 0.7 }}
             className="flex items-center justify-center gap-4 pt-4 text-white/50"
           >
-            <a href="mailto:srivastavaak@microsoft.com" className="hover:text-white transition-colors" aria-label="Email">
+            <a href="mailto:akanshsrivastava.srivastava35@gmail.com" className="hover:text-white transition-colors" aria-label="Email">
               <Mail className="w-5 h-5" />
             </a>
-            <a href="#" className="hover:text-white transition-colors" aria-label="GitHub">
+            <a href="https://github.com/IAMAKANSH" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="GitHub">
               <GithubIcon className="w-5 h-5" />
             </a>
-            <a href="#" className="hover:text-white transition-colors" aria-label="LinkedIn">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="LinkedIn">
               <LinkedinIcon className="w-5 h-5" />
             </a>
           </motion.div>
@@ -181,9 +182,9 @@ const Hero1 = () => {
             className="grid grid-cols-3 gap-4 md:gap-8 max-w-2xl mx-auto pt-10"
           >
             {[
-              { n: "5+", l: "Years Experience" },
-              { n: "20+", l: "Projects Delivered" },
-              { n: "3", l: "Companies" },
+              { n: "6+", l: "Years Experience" },
+              { n: "40K", l: "Concurrent Calls Scaled" },
+              { n: "10M+", l: "Calls / Week Shipped" },
             ].map((s) => (
               <div
                 key={s.l}

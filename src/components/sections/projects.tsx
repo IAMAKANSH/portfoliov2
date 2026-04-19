@@ -16,40 +16,58 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
-    name: "Jarvis — AI Assistant",
-    desc: "Iron Man-style desktop AI assistant with dual-model routing (NVIDIA NIM + local), voice wake-word, tool use, and a live HUD overlay.",
-    image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
-    tech: ["Python", "Next.js", "NVIDIA NIM", "WebSocket"],
-    live: "#",
-    code: "#",
-  },
-  {
-    name: "Stock Analyzer",
-    desc: "Backtesting and signal generation platform with live market feed ingestion, factor analysis, and a visual strategy builder.",
-    image:
-      "https://images.unsplash.com/photo-1642790551116-18e150f248e5?auto=format&fit=crop&w=1200&q=80",
-    tech: ["Python", "FastAPI", "PostgreSQL", "React"],
-    live: "#",
-    code: "#",
-  },
-  {
-    name: "UPSC Prep OS",
-    desc: "Structured spaced-repetition study system tailored for UPSC aspirants — daily plans, analytics, and adaptive revision.",
-    image:
-      "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80",
-    tech: ["Expo", "TypeScript", "Supabase"],
-    live: "#",
-    code: "#",
-  },
-  {
-    name: "DevOps Control Plane",
-    desc: "Centralized observability dashboard aggregating logs, metrics and alerts across microservices with custom alert rules.",
+    name: "Agent Emorch — Virtual-Agent Harness",
+    desc: "Virtual-agent UI on the ACS Calling SDK supporting startCall / endCall / mute / DTMF / audio. 99.9% reliability; standard harness for RoadRunner synthetic runs and RTA scale squads across Dynamics teams.",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
-    tech: ["Go", "Grafana", "Prometheus", "Docker"],
+    tech: ["React", "Node.js", "Playwright", "ACS SDK"],
     live: "#",
     code: "#",
+  },
+  {
+    name: "CSW Adapter — Real-Agent Simulation",
+    desc: "Java Spring Boot service that simulates real-agent behavior on Dynamics 365 CSW over SignalR/WebSocket. Handles OC invites, CCaaS accept for ACS and Teams, and auto-rotates refresh tokens for multi-hour runs. 99.99% reliability.",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    tech: ["Java", "Spring Boot", "SignalR", "WebSocket"],
+    live: "#",
+    code: "#",
+  },
+  {
+    name: "ACS Stub — Signaling Emulator at Scale",
+    desc: "Python + Redis service emulating ACS signaling at scale — cut ACS cost ~70% and unblocked the 40K concurrent-call milestone for Dynamics 365 Customer Service Workspace.",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    tech: ["Python", "Redis", "Azure", "ACS"],
+    live: "#",
+    code: "#",
+  },
+  {
+    name: "Microsoft Cadence — Calling App",
+    desc: "Multi-call calling app built on ACS SDK with acsResource / SIP-header / Call-ID routing, call history, and CFV flow. Shipped 10M+ calls across 7 days with zero failures.",
+    image:
+      "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?auto=format&fit=crop&w=1200&q=80",
+    tech: ["React", "Node.js", "ACS SDK", "Redis/AMR"],
+    live: "#",
+    code: "#",
+  },
+  {
+    name: "MsOneCall — Shared Calling Tool",
+    desc: "Java Spring Boot + ACS SDK tool offering inbound/outbound calling with DTMF, speak, STT, end-to-end transcription, and BYO-service. Adopted by E2E and multiple internal Dynamics teams.",
+    image:
+      "https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&w=1200&q=80",
+    tech: ["Java", "Spring Boot", "ACS SDK", "STT"],
+    live: "#",
+    code: "#",
+  },
+  {
+    name: "Jarvis — AI Voice Assistant",
+    desc: "Iron Man-style desktop AI assistant with dual-model routing (NVIDIA NIM + local), Whisper STT, tool-calling, and wake-word. Full mic → STT → LLM → TTS pipeline.",
+    image:
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
+    tech: ["Python", "NVIDIA NIM", "Whisper", "TTS"],
+    live: "#",
+    code: "https://github.com/IAMAKANSH",
   },
 ];
 

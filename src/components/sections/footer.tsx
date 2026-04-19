@@ -4,9 +4,10 @@ export const Footer = () => {
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
         <p>© 2026 Akansh Srivastava. Built with Next.js, Tailwind & Framer Motion.</p>
         <div className="flex gap-5">
-          <a href="#" className="hover:text-white transition-colors">GitHub</a>
+          <a href="https://github.com/IAMAKANSH" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>
           <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
-          <a href="mailto:srivastavaak@microsoft.com" className="hover:text-white transition-colors">
+          <a href="#" className="hover:text-white transition-colors">Medium</a>
+          <a href="mailto:akanshsrivastava.srivastava35@gmail.com" className="hover:text-white transition-colors">
             Email
           </a>
         </div>

@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Akansh Srivastava — Backend Developer",
+  title: "Akansh Srivastava — SDE-2 @ Microsoft",
   description:
-    "Backend Developer at Microsoft. I build robust, scalable server-side systems and deliver end-to-end solutions when the team needs it.",
+    "SDE-2 at Microsoft with 6+ years in distributed systems (Java, .NET, Node.js, Python). Scaled Dynamics 365 telephony tooling from 2K to 40K concurrent calls and shipped Cadence at 10M+ calls/week with zero failures.",
 };
 
 export default function RootLayout({
